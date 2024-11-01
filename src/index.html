@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Калькулятор</h1>
+
+    <div class="inputs">
+
+        <div id="num">        
+            <h2>Перше число</h2>
+            <input type="text" id="num1" placeholder="№1" maxlength="6">
+        </div>
+
+
+        <div id="buttons">
+            <button onclick="calculate('add')">+</button>
+            <button onclick="calculate('subtract')">-</button>
+            <button onclick="calculate('multiply')">×</button>
+            <button onclick="calculate('divide')">÷</button>
+            <button onclick="calculate('power')">^</button>
+          </div>
+
+        <div id="num">        
+            <h2>Друге число</h2>
+            <input type="text" id="num2" placeholder="№2" maxlength="6">
+        </div>
+
+    </div>
+    
+    <div id="result" style="display: none;">
+        <p>Результат:</p>
+    <p class="result"></p>
+    </div>
+
+    <p id="error" class="error"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
